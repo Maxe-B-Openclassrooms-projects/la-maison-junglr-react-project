@@ -1,5 +1,8 @@
 import logo from './logo.svg';
+//mport '../styles/Banner.css'
+
 import './App.css';
+
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
@@ -25,6 +28,8 @@ function App() {
 
   );
 }
+
+
 function Compteur() {
   const [compte, setCompte] = useState(0);
   const divStyle = {
@@ -45,4 +50,6 @@ function Compteur() {
 
 ReactDOM.render(<Compteur />, document.getElementById('root'));
 
-export default Compteur;
+// export default Compteur;
+export default App;
+
