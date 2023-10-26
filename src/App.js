@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Coucou Petit test React </p>
+        <p>Coucou Petit test React</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -27,14 +27,19 @@ function App() {
 }
 function Compteur() {
   const [compte, setCompte] = useState(0);
+  const divStyle = {
+    backgroundColor: 'yellow',
+    color: 'red',
+  };
+
 
   return (
-    <div>
+    <div style={divStyle}>
       <h1>Bonjour, ceci est un composant React fonctionnel !</h1>
       <p>Compte actuel: {compte}</p>
       <button onClick={() => setCompte(compte + 1)}>Ajouter</button>
       <button onClick={() => setCompte(compte - 1)}>Soustraire</button>
-    </div>
+    </div >
   );
 }
 
